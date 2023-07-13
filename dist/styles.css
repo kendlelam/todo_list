@@ -61,7 +61,7 @@ button {
 }
 
 .project-label{
-    padding:10px;
+
     background-color: rgb(233, 233, 233);
     margin-top:10px;
     border-radius: 10px;
@@ -75,6 +75,7 @@ button {
 }
 
 .project-name{
+    padding:10px;
     flex:1;
 }
 
@@ -164,6 +165,12 @@ button {
     align-items: center;
     border-left:1px solid black;
     font-size: 1.5em;
+}
+.remove{
+    display: flex;
+    padding-right:10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .right-task{
