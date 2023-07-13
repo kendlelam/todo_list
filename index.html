@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">Todo List</div>
+    <div class="flex-container">
+        <div class="sidebar">
+            <div class="project-panel">
+                <div class="projects-title">Projects</div>
+                <button type="button" id="add-project">+</button>
+            </div>
+            
+            <div class="project-list"></div>
+            <div class="project-textarea">
+                <input type="text" id="projectName">
+                <div class="project-pane">
+                    <button type="button" id="confirmProject" class="flex-item">Add</button>
+                    <button type="button" id="cancelProject" class="flex-item">Cancel</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="todo-header project-panel">
+                <div class="todo-title"></div>
+                <button type="button" id="add-task-button">Add Task</button>
+            </div>
+            <div class="task-content"></div>
+        </div>
+    </div>
+
+    <div class="modal-background">
+        <div class="modal">
+            <div class="project-panel">
+                <h3>Create Task:</h3> 
+                <button type="button" id="closeModal">&#x2715</button>
+            </div>
+            
+            <form class="addForm"> 
+                <label for="title">Title: <input type="text" id="title" name="title" required> </label>
+                
+                <label for="description">Description: <textarea id="description" name="description" required></textarea></label>
+                
+                <label for="duedate">Due Date: <input type="date" name="duedate" id ="duedate" required> </label>
+                
+
+                <fieldset>
+                    <legend>Priority</legend>
+                    
+                    <div>
+                        <label for="lowPrio">Low</label>
+                        <input type="radio" name="select" id="lowPrio" required>
+                    </div>
+                        
+                    <div>
+                        <label for="medPrio">Medium</label>
+                        <input type="radio" name="select" id="medPrio" >
+                    </div>
+                    
+                    <div>
+                        <label for="HighPrio">High</label>
+                        <input type="radio" name="select" id="highPrio" >
+                    </div>
+                </fieldset>
+                
+                
+                
+                </label>
+                 <br>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
